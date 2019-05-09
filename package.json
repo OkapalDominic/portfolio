@@ -1,26 +1,31 @@
 {
   "name": "dominic_okapal_portfolio",
   "version": "1.0.0",
+  "homepage": "https://OkapalDominic.github.io",
   "description": "A portfolio site for Dominic Okapal",
   "main": "index.js",
   "dependencies": {
-    "babel-core": "^6.26.3",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "parcel-bundler": "^1.12.3",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
     "styled-components": "^4.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.12.3"
+  },
   "scripts": {
     "build": "parcel build ./src/index.html",
-    "start": "parcel ./src/index.html -p 1337"
+    "start": "parcel ./src/index.html -p 1337",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/OkapalDominic/portfolio.git"
+    "url": "git+https://github.com/OkapalDominic/OkapalDominic.github.io.git"
   },
   "keywords": [
     "portfolio",
@@ -31,6 +36,5 @@
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/OkapalDominic/portfolio/issues"
-  },
-  "homepage": "https://github.com/OkapalDominic/portfolio#readme"
+  }
 }
