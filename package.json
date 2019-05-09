@@ -1,15 +1,32 @@
 {
-  "name": "my_portfolio",
+  "name": "dominic_okapal_portfolio",
   "version": "1.0.0",
-  "description": "",
+  "description": "A portfolio site for Dominic Okapal",
   "main": "index.js",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.12.3",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0",
+    "styled-components": "^4.2.0"
+  },
+  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "parcel build ./src/index.html",
+    "start": "parcel ./src/index.html -p 1337"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/OkapalDominic/portfolio.git"
   },
+  "keywords": [
+    "portfolio",
+    "Dominic",
+    "Okapal"
+  ],
   "author": "Dominic Okapal",
   "license": "ISC",
   "bugs": {
